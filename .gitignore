@@ -29,3 +29,6 @@ bin/
 .DS_Store
 /.idea/misc.xml
 /StepikSumin1.iml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/.gitignore
