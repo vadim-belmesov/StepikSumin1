@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         //Экземпляр класса Test
-        Test test = new Test();
+        //Test test = new Test();
         //используем параметризованный метод square
         //System.out.println(test.square(10));
 
