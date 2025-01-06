@@ -1,3 +1,5 @@
+package java_syntaxis_examples;
+
 public class Char {
     public static void main(String[] args) {
         char x = 88;

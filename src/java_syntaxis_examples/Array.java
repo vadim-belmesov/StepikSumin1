@@ -1,3 +1,5 @@
+package java_syntaxis_examples;
+
 public class Array {
     public static void main(String[] args) {
         //Массив(пустой) строкового типа на 12 элементов 

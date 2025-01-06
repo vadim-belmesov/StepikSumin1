@@ -1,3 +1,5 @@
+package java_syntaxis_examples;
+
 public class Bolean {
     public static void main(String[] args) {
       int temp = 24;

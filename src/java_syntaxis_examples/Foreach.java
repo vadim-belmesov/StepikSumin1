@@ -1,3 +1,5 @@
+package java_syntaxis_examples;
+
 public class Foreach {
     public static void main(String[] args) {
         String[] studensNames = {

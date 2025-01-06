@@ -1,3 +1,5 @@
+package java_syntaxis_examples;
+
 public class IntegerTypes {
   public static void main(String[] args) {
     long speed = 300_000;
