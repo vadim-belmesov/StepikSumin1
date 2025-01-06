@@ -1,4 +1,5 @@
-package Main;
+package java_syntaxis_examples;
+
 public class Strings {
   public static void main(String[] args) {
     String Name = "Иван";

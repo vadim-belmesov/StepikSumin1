@@ -1,4 +1,5 @@
-package Main;
+package java_syntaxis_examples;
+
 public class LoopLess {
 
 /*    public static void main(String[] args){
