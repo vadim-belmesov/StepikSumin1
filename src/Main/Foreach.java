@@ -1,3 +1,4 @@
+package Main;
 public class Foreach {
     public static void main(String[] args) {
         String[] studensNames = {

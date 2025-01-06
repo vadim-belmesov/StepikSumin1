@@ -1,3 +1,4 @@
+package Main;
 public class Variable {
   public static void main(String[] args) {
     int days = 366;

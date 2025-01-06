@@ -1,3 +1,4 @@
+package Main;
 public class IntegerTypes {
   public static void main(String[] args) {
     long speed = 300_000;

@@ -1,3 +1,4 @@
+package Main;
 public class ConditionalOperator {
   public static void main(String[] args) {
     int temp = 100;

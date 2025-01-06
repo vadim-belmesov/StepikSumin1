@@ -1,3 +1,4 @@
+package Main;
 public class LoopLess {
 
 /*    public static void main(String[] args){

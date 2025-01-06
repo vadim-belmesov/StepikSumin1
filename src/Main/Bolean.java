@@ -1,3 +1,4 @@
+package Main;
 public class Bolean {
     public static void main(String[] args) {
       int temp = 24;
