@@ -1,18 +1,14 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-
-
-        //Экз класса Box
-        Box box1 = new Box(10, 10, 10);
-        System.out.println(box1.getVolume());
-
+        Math math = new Math();
         
-        //Экз класса прямоугольник
-        Rectangle rectangle1 = new Rectangle(10, 20);
-        System.out.println(rectangle1.rectangleSquare());
+        //int
+        System.out.println(math.multiple(10, 5));
 
-        //Экз класса Работник
-        Worker worker1 = new Worker("Ivan", "engineer", 100.0);
-        worker1.showInfo();
+        //double
+        System.out.println(math.multiple(10.3, 5.1));
+
+        //single
+        System.out.println(math.multiple(10));
     }
 }
