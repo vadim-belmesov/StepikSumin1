@@ -13,4 +13,6 @@ public class Math {
     static int multiple(int a){
         return a * a;
     }
+
+    
 }

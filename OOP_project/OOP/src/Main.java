@@ -7,6 +7,9 @@ public class Main {
         System.out.println(Math.multiple(10.3, 5.1));
 
         //single
-        System.out.println(Math.multiple(10));
+        System.out.println(Math.multiple(100));
+
+        Box cube = new Box(11);
+        cube.showVolume();
     }
 }

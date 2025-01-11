@@ -13,6 +13,11 @@ public class Box {
         this.height = height;
     }
 
+    Box(int size){
+        this.length = size;
+        this.width = size;
+        this.height = size;
+    }
 
     void setDimens(double length, double width, double height){
             this.length = length;
@@ -20,7 +25,7 @@ public class Box {
             this.height = height;
     } 
 
-    double getVolume(){
+    double showVolume(){
         double volume = length * width * height;
         return volume;
     }
