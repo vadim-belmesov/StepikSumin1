@@ -9,6 +9,10 @@ public class Box {
         this.height = length;
     }
 
+    Box increase(){
+        return new Box(this.length * 2, this.width * 2,this.height * 2);
+    }
+
     Box copy(Box first){
         return first;
     }
