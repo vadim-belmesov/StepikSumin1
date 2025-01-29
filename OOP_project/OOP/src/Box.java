@@ -3,26 +3,23 @@ public class Box {
     double width;
     double height;
 
-
-    //Конструктор класса
-    //Теперь когда мы создаём экземпляр класса, мы обязательно должны
-    //передать параметры
-    Box(){
-        this(10);
-    }
-    
     Box(double length, double width, double height){
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
+    //Конструктор в котором используется другой конструктор
     Box(int size){
         this(size, size, size); //перегрузка конструктора
     }
 
-    double showVolume(){
-        double volume = length * width * height;
-        return volume;
+    //Пустой конструктор где мы также вызываем контструктор для 1 элемента
+    Box(){
+        this(10);
+    }
+
+    void showVolume(){
+        System.out.println( length * width * height);
     }
 }
