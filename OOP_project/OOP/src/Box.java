@@ -7,6 +7,10 @@ public class Box {
     //Конструктор класса
     //Теперь когда мы создаём экземпляр класса, мы обязательно должны
     //передать параметры
+    Box(){
+        this(10);
+    }
+    
     Box(double length, double width, double height){
         this.length = length;
         this.width = width;
@@ -14,16 +18,8 @@ public class Box {
     }
 
     Box(int size){
-        this.length = size;
-        this.width = size;
-        this.height = size;
+        this(size, size, size); //перегрузка конструктора
     }
-
-    void setDimens(double length, double width, double height){
-            this.length = length;
-            this.width = width;
-            this.height = height;
-    } 
 
     double showVolume(){
         double volume = length * width * height;

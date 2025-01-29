@@ -8,8 +8,5 @@ public class Main {
 
         //single
         System.out.println(Math.multiple(100));
-
-        Box cube = new Box(11);
-        cube.showVolume();
     }
 }
