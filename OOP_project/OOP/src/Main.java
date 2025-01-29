@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-    Box box1 = new Box(10);
+    Box current = new Box(10);
+    Box another = new Box(20);
 
-    box1.showVolume();
+    current.compare(another);
+
     }
 }
