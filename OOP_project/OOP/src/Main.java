@@ -3,8 +3,9 @@ public class Main {
         Person person1 = new Person("Ivan", 20);
 
         //Можно изменить возраст, так как public
-        person1.age = -22;
+        person1.setAge(-22);
+        person1.setAge(22);
 
-        System.out.println(person1.name + " age " + person1.age);
+        System.out.println(person1.getName() + " age " + person1.getAge());
     }
 }
