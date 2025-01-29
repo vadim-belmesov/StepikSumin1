@@ -1,14 +1,10 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        Box current = new Box(10);
-        Box another = current.copy2();
-        Box increasedBox = current.increase();
+        Person person1 = new Person("Ivan", 20);
 
-        current.showVolume();
-        another.showVolume();
-        increasedBox.showVolume();
+        //Можно изменить возраст, так как public
+        person1.age = -22;
 
-//    System.out.println(current.compareNotPrint(another));
-
+        System.out.println(person1.name + " age " + person1.age);
     }
 }
