@@ -3,6 +3,20 @@ public class Box {
     double width;
     double height;
 
+    void setDimension(double length, double width, double height){
+        this.length = length;
+        this.width = length;
+        this.height = length;
+    }
+
+    Box copy(Box first){
+        return first;
+    }
+
+    Box copy2(){
+        return new Box(this.length, this.width,this.height);
+    }
+
     Box(double length, double width, double height){
         this.length = length;
         this.width = width;
