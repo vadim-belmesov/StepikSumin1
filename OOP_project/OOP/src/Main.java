@@ -3,7 +3,7 @@ public class Main {
     Box current = new Box(10);
     Box another = new Box(20);
 
-    current.compare(another);
+    System.out.println(current.compareNotPrint(another));
 
     }
 }

@@ -19,8 +19,8 @@ public class Box {
         this(10);
     }
 
-    //Метод сравнения объектов
-    void compare(Box another){
+    //Метод сравнения объектов с выводом в консоль
+    void comparePrint(Box another){
         double currentVolume  = getVolume();
         double anotherVolume = another.getVolume();
 
@@ -31,6 +31,21 @@ public class Box {
         }else
             System.out.println("currentVolume == anotherVolume");
     }
+
+    //Метод сравнения объектов без вывода в консоль
+    int compareNotPrint(Box another){
+        double currentVolume  = getVolume();
+        double anotherVolume = another.getVolume();
+
+        if(currentVolume > anotherVolume){
+            return 1;
+        } else if (currentVolume < anotherVolume) {
+            return -1;
+        }else {
+            return 0;
+        }
+    }
+
 
     double getVolume(){
        return length * width * height;
