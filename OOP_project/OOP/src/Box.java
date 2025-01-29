@@ -13,6 +13,10 @@ public class Box {
     Box(int size){
         this(size, size, size); //перегрузка конструктора
     }
+    Box(Box another){
+        this(another.length, another.width, another.height); //перегрузка конструктора
+    }
+
 
     //Пустой конструктор где мы также вызываем контструктор для 1 элемента
     Box(){
@@ -46,8 +50,11 @@ public class Box {
         }
     }
 
-
     double getVolume(){
        return length * width * height;
+    }
+
+    void showVolume(){
+        System.out.println(length * width * height);
     }
 }
