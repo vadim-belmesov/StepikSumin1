@@ -8,6 +8,14 @@ public class MyMath {
     return 2 * PI * radius;
   }
 
+  public static int sum (int... numbers){
+    int sum = 0;
+    for(int number : numbers){
+      sum += number;
+    }
+    return sum;
+  }
+
   public static double area(double radius){
     //pi = 10;
     return PI * radius * radius;
