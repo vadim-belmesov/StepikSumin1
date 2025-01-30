@@ -1,13 +1,11 @@
-public class Box {
-    double length;
-    double width;
-    double height;
+package box;
 
-    void setDimension(double length, double width, double height){
-        this.length = length;
-        this.width = length;
-        this.height = length;
-    }
+public class Box {
+    private double length;
+    private double width;
+    private double height;
+
+
 
     Box increase(){
         return new Box(this.length * 2, this.width * 2,this.height * 2);
@@ -21,14 +19,14 @@ public class Box {
         return new Box(this.length, this.width,this.height);
     }
 
-    Box(double length, double width, double height){
+    public Box(double length, double width, double height){
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
     //Конструктор в котором используется другой конструктор
-    Box(int size){
+    public Box(int size){
         this(size, size, size); //перегрузка конструктора
     }
     Box(Box another){
@@ -54,6 +52,8 @@ public class Box {
             System.out.println("currentVolume == anotherVolume");
     }
 
+
+
     //Метод сравнения объектов без вывода в консоль
     int compareNotPrint(Box another){
         double currentVolume  = getVolume();
@@ -68,7 +68,13 @@ public class Box {
         }
     }
 
-    double getVolume(){
+    private void setDimension(double length, double width, double height){
+        this.length = length;
+        this.width = length;
+        this.height = length;
+    }
+
+    private double getVolume(){
        return length * width * height;
     }
 

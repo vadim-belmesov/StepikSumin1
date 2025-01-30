@@ -1,3 +1,5 @@
+package Examples;
+
 public class Worker {
     String name;
     String poste;

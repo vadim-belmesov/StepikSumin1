@@ -1,3 +1,5 @@
+package Examples;
+
 public class Rectangle {
     double length;
     double width;

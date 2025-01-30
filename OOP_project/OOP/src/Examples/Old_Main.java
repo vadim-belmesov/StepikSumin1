@@ -1,13 +1,13 @@
 package Examples;
 
-//import javax.swing.Box;
+//import javax.swing.box.Box;
 
 public class Old_Main {
     public class Main {
     public static void main(String[] args) throws Exception {
     //     //Экземпляр box1
     //                 //После new мы создали экземпляр класса box
-    //     Box box1 = new Box();
+    //     box.Box box1 = new box.Box();
         
     //     box1.height = 10;
     //     box1.length = 10;
@@ -15,7 +15,7 @@ public class Old_Main {
     //     double volume1 = box1.getVolume();
      
     //     //Экземпляр box2
-    //     Box box2 = new Box();
+    //     box.Box box2 = new box.Box();
         
     //     box2.height = 12;
     //     box2.length = 15;
@@ -45,7 +45,7 @@ public class Old_Main {
     //     System.out.println("Average value: " + (human1.value + human2.value + human3.value)/3);
 
 
-    //     dog dog1 = new dog();
+    //     Examples.dog dog1 = new Examples.dog();
     //     dog1.name = "Tuz";
     //     dog1.breed = "Spaniel";
     //     dog1.weight = 5;
