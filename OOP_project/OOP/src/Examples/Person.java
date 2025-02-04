@@ -11,6 +11,10 @@ public class Person {
         }else System.out.println("Enter correct age");
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
     //Геттеры для имени и возраста
     public String getName(){
         return this.name;

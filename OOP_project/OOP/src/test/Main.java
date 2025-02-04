@@ -1,19 +1,18 @@
 package test;
 
 import Examples.MyMath;
+import Examples.Person;
 
 public class Main {
     public static void main(String[] args){
-        String a = "1000";
-        String b = "2000";
+        String text = "This is John. He is 27";
 
-        System.out.println(a + b); //10002000
 
-        //Используем метод для преобразования
-        int a1 = Integer.parseInt(a);
-        int b1 = Integer.parseInt(b);
+        Person man = new Person(text.substring(8,12), 0);
+        //String age = text.substring(21,22);
 
-        System.out.println(a1 + b1); //3000
+        man.setAge(Integer.parseInt(text.substring(20,22)));
+        System.out.println(man.getName() + " " + man.getAge());
 
     }
 }
