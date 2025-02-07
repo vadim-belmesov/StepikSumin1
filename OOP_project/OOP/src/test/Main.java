@@ -5,28 +5,34 @@ import Examples.Person;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args){
-        ArrayList<String> names = new ArrayList<>();
-        names.add("Ivan");
-        names.add("Petr");
-
-        ArrayList<Integer> numbers = new ArrayList<>();
-        numbers.add(1);
-        numbers.add(2);
-
-        ArrayList<String> List = new ArrayList<>();
-        for (String name: names){
-            for (int num:numbers){
-                List.add(name + " - " + num);
-            }
+        HashSet<String> elements = getElements();
+        for (String element: elements){
+            System.out.println(element);
         }
 
-        for (String item: List){
-            System.out.println(item);
-        }
+        ArrayList<String> ArrElements = getArrayElements();
+        System.out.println(ArrElements.get(1));
 
     }
 
+    private static HashSet<String> getElements(){
+        HashSet<String> elements = new HashSet<>();
+        elements.add("One");
+        elements.add("Two");
+        elements.add("Three");
+        elements.add("Four");
+
+        return elements;
+    }
+
+    private static ArrayList<String> getArrayElements() {
+        ArrayList<String> elements = new ArrayList<>();
+        elements.add("OneArr");
+        elements.add("TwoArr");
+        return elements;
+    }
 }
