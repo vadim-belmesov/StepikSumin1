@@ -2,6 +2,6 @@ package inheritance;
 
 public class Cat extends CatFamily {
   public Cat(){
-    canEatPerson = false;
+    super(4, 2, false);
   }
 }
