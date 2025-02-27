@@ -1,9 +1,9 @@
 package shape;
-public class Shape {
-  int a;
-  int b;
+public abstract class Shape {
+  private int a;
+  private int b;
 
-  Shape(int a, int b){
+  public Shape(int a, int b){
     this.a = 10;
     this.b = 5;
   }
@@ -16,11 +16,9 @@ public class Shape {
     return b;
   }
 
-  public int getPerimeter(){
-    return 0;
-  }
+  public abstract int getPerimeter();
 
-  void showPerimeter(){
+  public void showPerimeter(){
     System.out.println(getPerimeter());
   }
 }
