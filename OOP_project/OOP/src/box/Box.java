@@ -5,20 +5,6 @@ public class Box {
     private double width;
     private double height;
 
-
-
-    Box increase(){
-        return new Box(this.length * 2, this.width * 2,this.height * 2);
-    }
-
-    Box copy(Box first){
-        return first;
-    }
-
-    Box copy2(){
-        return new Box(this.length, this.width,this.height);
-    }
-
     public Box(double length, double width, double height){
         this.length = length;
         this.width = width;
@@ -26,7 +12,7 @@ public class Box {
     }
 
     //Конструктор в котором используется другой конструктор
-    public Box(int size){
+    public Box(double size){
         this(size, size, size); //перегрузка конструктора
     }
     Box(Box another){
@@ -51,8 +37,6 @@ public class Box {
         }else
             System.out.println("currentVolume == anotherVolume");
     }
-
-
 
     //Метод сравнения объектов без вывода в консоль
     int compareNotPrint(Box another){
@@ -80,5 +64,9 @@ public class Box {
 
     void showVolume(){
         System.out.println(length * width * height);
+    }
+
+    public void showInfo(){
+        System.out.println(length+ " " + width + " " + height);
     }
 }
