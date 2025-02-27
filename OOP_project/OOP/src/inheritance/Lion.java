@@ -7,6 +7,7 @@ public class Lion extends CatFamily{
 
   @Override
   public void eat(){
-    System.out.println("Ем антилопу");
+    super.eat();
+    System.out.println("антилопу");
   }
 }

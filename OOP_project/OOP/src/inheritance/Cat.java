@@ -6,7 +6,10 @@ public class Cat extends CatFamily {
   }
 
   @Override
-  public void eat(){
-    System.out.println("Ем сухой корм");
+  public void eat() {
+    super.eat();
+    System.out.println("сухой корм");
   }
 }
+
+//"сухой корм"

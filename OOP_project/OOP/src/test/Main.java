@@ -8,6 +8,7 @@ public class Main {
         Cat cat = new Cat();
         Lion lion = new Lion();
 
+
         cat.eat();
         lion.eat();
     }
