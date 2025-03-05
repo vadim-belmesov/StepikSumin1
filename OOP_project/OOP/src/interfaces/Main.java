@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
-    Cat cat = new Cat();
+/*    Cat cat = new Cat();
     Dog dog = new Dog();
     Bird bird = new Bird();
     Fish fish = new Fish();
@@ -17,6 +17,12 @@ public class Main {
 
     for(Animal animal:animals){
       animal.eat();
-    }
+    }*/
+
+    Animal animal = new Dog();
+    animal.eat(); //Собачий корм
+
+    Dog dog = (Dog) animal; //Приведение типа
+    dog.run(); //Собака бежит
   }
 }
