@@ -4,25 +4,23 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
-/*    Cat cat = new Cat();
+    Cat cat = new Cat();
     Dog dog = new Dog();
     Bird bird = new Bird();
     Fish fish = new Fish();
 
-    ArrayList<Animal> animals = new ArrayList<>();
+    ArrayList<AbleToRun> animals = new ArrayList<>();
     animals.add(cat);
     animals.add(dog);
     animals.add(bird);
-    animals.add(fish);
 
-    for(Animal animal:animals){
-      animal.eat();
-    }*/
+    for (AbleToRun animal:animals){
+      animal.run();
+    }
+    AbleToFly ableToFly = new Bird();
+    ableToFly.fly();
 
-    Animal animal = new Dog();
-    animal.eat(); //Собачий корм
-
-    Dog dog = (Dog) animal; //Приведение типа
-    dog.run(); //Собака бежит
+    AbleToSwim ableToSwim = new Fish();
+    ableToSwim.swim();
   }
 }
