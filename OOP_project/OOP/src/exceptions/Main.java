@@ -2,18 +2,13 @@ package exceptions;
 
 public class Main {
   public static void main(String[] args) {
-    int a = 1;
-    int b = 1;
+    String[] names = new String[5];
+
     try {
-      int c1 = a/b;
-      int c = Integer.parseInt("dfadasdas");
+      System.out.println(names[5]);
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("Вы за пределами массива ");
     }
-    catch (Exception e) {
-      System.out.println("Возникло исключение:\n"
-              + "*** " + e.getClass() + "\n"
-              + "*** " + e.getMessage() );
-    }
-    System.out.println("Hello");
   }
 }
 
