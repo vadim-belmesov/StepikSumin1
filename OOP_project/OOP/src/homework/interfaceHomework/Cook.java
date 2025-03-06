@@ -1,4 +1,4 @@
-package interfaceHomework;
+package homework.interfaceHomework;
 
 public class Cook implements Driver, Worker{
 

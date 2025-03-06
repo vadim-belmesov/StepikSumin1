@@ -1,4 +1,4 @@
-package interfaceHomework;
+package homework.interfaceHomework;
 
 public class Programmer implements Driver, Worker{
 
