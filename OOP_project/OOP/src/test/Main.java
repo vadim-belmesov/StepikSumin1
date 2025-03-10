@@ -2,9 +2,14 @@ package test;
 
 import Examples.Person;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("Jo", 20);
-        System.out.println(person); //Examples.Person@3feba861
+        Random random = new Random();
+        for (int i = 0; i < 100; i++){
+            int a = random.nextInt(5, 11);
+            System.out.print(a + " ");
+        }
     }
 }
